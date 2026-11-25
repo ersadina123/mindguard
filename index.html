@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINDGUARD MAGAZINE - Edisi Khusus: Ketergantungan Berpikir</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="magazine-container">
+        <!-- Header Majalah -->
+        <header>
+            <div class="magazine-subtitle">Jurnal Khusus Isu Sosial Informatika</div>
+            <div class="magazine-title">MindGuard</div>
+            <div class="magazine-meta">
+                <span>Edisi 01 / 2026</span>
+                <span>Fokus: Ketergantungan Berpikir (Cognitive Offloading)</span>
+                <span>Rubrik Utama</span>
+            </div>
+        </header>
+
+        <!-- Konten Utama (Grid Kolom Majalah) -->
+        <div class="grid-layout">
+            <!-- Kolom Artikel Utama -->
+            <article class="headline-article">
+                <h1>Menjaga Nalar Kritis di Tengah Arus Jawaban Instan Teknologi</h1>
+                <p>
+                    <span class="drop-cap">D</span>i era digital saat ini, kemudahan akses informasi dan kecerdasan buatan memberikan kenyamanan luar biasa. Namun, di balik kemudahan tersebut, muncul tantangan serius berupa ketergantungan berpikir, di mana pelajar sering kali mengambil jalan pintas dengan menyalin jawaban instan tanpa melalui proses penalaran yang mendalam.
+                </p>
+                <p>
+                    Fenomena ini memicu penurunan kemampuan analisis, retensi memori, serta kreativitas pemecahan masalah secara mandiri. Ketika otak terbiasa pasif menerima hasil akhir dari mesin, kapasitas kognitif manusia perlahan mengalami kemunduran.
+                </p>
+                <p>
+                    Website MindGuard hadir sebagai bentuk solusi edukatif untuk melatih kembali kemandirian berpikir melalui pendekatan pemandu pertanyaan kritis (Socratic Hint), agar teknologi tetap menjadi alat bantu produktivitas yang sehat.
+                </p>
+            </article>
+
+            <!-- Kolom Sidebar & Fitur Interaktif -->
+            <aside>
+                <h3>Ruang Uji Nalar Mandiri</h3>
+                <p>Masukkan topik atau soal yang sedang kamu pelajari. Sistem akan memberimu panduan pertanyaan penuntun, bukan jawaban instan.</p>
+                
+                <div class="interactive-box">
+                    <label for="mindInput" style="font-weight: bold; font-size: 0.85rem; display: block; margin-bottom: 5px;">Topik / Masalah:</label>
+                    <textarea id="mindInput" placeholder="Contoh: Mengapa ekosistem hutan penting?"></textarea>
+                    <button onclick="generateMindGuardHint()">Dapatkan Panduan Kritis</button>
+
+                    <div id="guardResultBox" class="output-panel">
+                        <strong>Pertanyaan Pemantik:</strong>
+                        <p id="guardHintText" style="margin-top: 5px; margin-bottom: 0;"></p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Footer Majalah -->
+        <footer>
+            <p>&copy; 2026 MindGuard Magazine. Dibuat untuk Proyek Pembelajaran Informatika Berbasis Solusi Nyata.</p>
+        </footer>
+    </div>
+
+    <!-- Menghubungkan file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
